@@ -28,7 +28,6 @@ Human control is strongest during the **Initial Placement** phase. After that, v
 ## Initial Placement Phase
 
 The Initial Placement phase supports several placement approaches:
-
 * **Max Pips** — ranks intersections by dice-production strength
 * **Max Pips + Ports** — includes port access and trading potential
 * **5 Weighted Strategic Strategies** — compares strategic profiles such as balanced production, Wood/Brick expansion, Wheat/Ore development, and monopoly-style resource pressure
@@ -43,14 +42,12 @@ Initial Placement is especially important in v016 because it creates the first p
 After Initial Placement, v016 is not a full manual-play version. The human player no longer chooses freely between all possible Execution-phase actions.
 
 Instead, the user mainly advances the game through **PLAY** and **JUMP**:
-
 * **JUMP** fast-forwards to the next predicted useful event or action timing.
 * **PLAY** advances the game step by step and executes only when the real game state passes exact legality and affordability checks.
 
 This makes v016 an **Initial Placement and AI-strategy evaluation version**. The user chooses the starting position, then observes how well that position performs when the Expected-Hand engine continues the game.
 
 During automated continuation, the engine can handle actions such as:
-
 * bank/port trades
 * road builds
 * settlement builds
@@ -92,7 +89,6 @@ It works in the project resource order:
 In GUI text and documentation, Wool may also be described as Sheep, matching common Catan terminology.
 
 Typical outputs include:
-
 * estimated turns until affordable
 * expected hand at that time
 * required resources
@@ -153,7 +149,6 @@ This makes the recommendation logic more strategic than a simple “build the fi
 ## Fast-Forward / BEST NOW Logic
 
 The fast-forward and recommendation logic evaluates possible future actions and tries to identify promising next moves. Candidate actions may include:
-
 * next settlement
 * new settlement requiring one or more roads
 * city upgrade
@@ -224,7 +219,6 @@ python main.py
 This is an experimental educational project. v016 should be understood as a research/development version of the engine, not as a final polished Catan product.
 
 The most important technical direction in v016 is the move from Markov-heavy timing prediction toward Expected-Hand feasibility:
-
 * faster to run
 * easier to explain
 * easier to debug
@@ -243,7 +237,6 @@ The most important technical direction in v016 is the move from Markov-heavy tim
 ## Prior Work and Acknowledgements
 
 The technical direction of the project was influenced by:
-
 * Lauren Nagel’s work on applying Markov-chain reasoning to Catan resource states and starting-position evaluation
 * PlayerOne’s Board Game Analysis series on the many possible ways to win at Catan
 * OpenAI’s ChatGPT, used as a writing and coding assistant during development discussions
